@@ -77,6 +77,11 @@ module Administrate
       end
     end
 
+    helper_method :extend_params
+    def extend_params(attributes)
+      params.permit!.merge(attributes)
+    end
+
     def records_per_page
       params[:per_page] || 20
     end
