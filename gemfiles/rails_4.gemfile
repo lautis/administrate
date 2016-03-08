@@ -4,13 +4,13 @@ source "https://rubygems.org"
 
 ruby "2.2.3"
 
+gem "rails", "~> 4.2.6"
 gem "delayed_job_active_record"
 gem "high_voltage"
 gem "markdown-rails"
 gem "pg"
 gem "redcarpet"
 gem "unicorn"
-gem "bourbon", "5.0.0.alpha.0"
 
 group :development do
   gem "web-console", ">= 2.1.3"
